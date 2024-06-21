@@ -1,2 +1,0 @@
-# CarritoCompras
-Carrito de compras
