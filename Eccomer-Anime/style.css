@@ -132,7 +132,7 @@ svg {
     overflow: auto; /* Habilita el desplazamiento vertical */
     justify-content: center; /* Centra horizontalmente */
     font-size: 2rem; /* Tamaño de fuente */
-    color: #333; /* Color de texto */
+    color: #fc2e95; /* Color de texto */
 }
 
 /* Estilos para los ítems de la lista en el slider */
@@ -431,7 +431,7 @@ svg {
     left: 50%; /* Alinea a la mitad horizontalmente */
     transform: translateX(-50%); /* Centra horizontalmente */
     z-index: 10; /* Índice z para estar sobre el carrusel */
-    text-shadow: 0 0 10px #7fffd4, 
+    text-shadow: 0 0 10px #ff188b, 
                  0 0 20px #7fffd4, 
                  0 0 30px #7fffd4, 
                  0 0 40px #7fffd4, 
@@ -516,8 +516,14 @@ svg {
     display: block; /* Elemento de bloque */
     border-radius: 10px; /* Borde redondeado */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+
+    /* Efecto de expansión */
+    transform-origin: center center; /* Origen de la transformación en el centro */
 }
 
+.item:hover img {
+    transform: scale(1.1); /* Escala al pasar el cursor */
+}
 
 /* Estilos para el contenedor images de compra */
 /* Estilos para el contenedor */
@@ -531,7 +537,7 @@ svg {
 }
 
 .contenedor .contenedor-items {
-    margin-top: 200px; /* Margen superior */
+    margin-top: 30px; /* Margen superior */
     display: grid; /* Utiliza grid para disposición */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Columnas automáticas */
     grid-gap: 50px; /* Espacio entre columnas */
@@ -544,7 +550,7 @@ svg {
     max-width: 180px; /* Ancho máximo del ítem */
     padding: 10px; /* Relleno interior */
     margin: auto; /* Margen automático */
-    border: 1px solid #f16ddbbe; /* Borde con color */
+    border: 1px solid #00dbde; /* Borde con color */
     border-radius: 20px; /* Borde redondeado */
     transition: 0.3s; /* Transición suave */
     background: #0a0a0a; /* Fondo de color oscuro */
@@ -558,7 +564,7 @@ svg {
 }
 
 .contenedor-items .item:hover {
-    box-shadow: 0 0 10px #d67daa; /* Sombra al pasar el cursor */
+    box-shadow: 0 0 10px #00dbde; /* Sombra al pasar el cursor */
     scale: 1.05; /* Escala al pasar el cursor */
 }
 
@@ -590,103 +596,103 @@ svg {
     display: block; /* Elemento de bloque */
     margin: 10px auto; /* Márgenes automáticos */
     border: none; /* Sin borde */
-    background: #f16ddbbe; /* Fondo con color */
-    color: #faf6f4; /* Color de texto blanco */
+    background: #eb0da1; /* Fondo con color */
+    color: #f1e6e6; /* Color de texto blanco */
     padding: 5px 15px; /* Relleno interior */
     border-radius: 5px; /* Borde redondeado */
     cursor: pointer; /* Cursor apuntador */
 }
 
 
-
-/* Estilos para la sección del carrito */
 .carrito {
-    border: 1px solid #f16ddbbe; /* Borde con color */
-    width: 35%; /* Ancho del carrito */
-    margin-top: 30px; /* Márgen superior */
-    border-radius: 10px; /* Borde redondeado */
-    overflow: hidden; /* Oculta el desbordamiento */
-    margin-bottom: auto; /* Margen inferior automático */
-    position: sticky !important; /* Posición pegajosa importante */
-    top: 0; /* Posicionamiento desde la parte superior */
-    transition: 0.3s; /* Transición suave */
-    opacity: 0; /* Opacidad inicial */
-    margin-right: -100%; /* Márgen derecho negativo */
+    border: 1px solid #f306a4;
+    width: 35%;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+    margin-right: -100%;
+    padding: 20px; /* Añadido margen interno */
 }
 
 .carrito .header-carrito {
-    background-color: #f16ddbbe; /* Color de fondo */
-    color: #fff; /* Color de texto blanco */
-    text-align: center; /* Alineación centrada */
-    padding: 30px 0; /* Relleno interior */
+    background-color: #080808;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
 }
 
 .carrito .carrito-item {
-    display: flex; /* Utiliza flexbox para disposición */
-    align-items: center; /* Centra verticalmente */
-    position: relative; /* Posición relativa */
-    border-bottom: 1px solid #ff7951; /* Borde inferior con color */
-    padding: 20px; /* Relleno interior */
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ff12f3;
+    padding: 20px 0; /* Reducido el relleno interior */
 }
 
 .carrito .carrito-item img {
-    margin-right: 20px; /* Márgen derecho */
-    width: 90px; /* Ancho de la imagen */
-    height: 90px; /* Altura de la imagen */
-    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    margin-right: 20px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 }
 
 .carrito .carrito-item .carrito-item-titulo {
-    display: block; /* Elemento de bloque */
-    font-weight: bold; /* Fuente en negrita */
-    margin-bottom: 10px; /* Márgen inferior */
-    text-transform: uppercase; /* Transformación a mayúsculas */
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reducido el margen inferior */
+    text-transform: uppercase;
 }
 
 .carrito .carrito-item .selector-cantidad {
-    display: inline-block; /* Elemento de bloque en línea */
-    margin-right: 25px; /* Márgen derecho */
+    display: inline-block;
+    margin-right: 15px; /* Reducido el margen derecho */
 }
 
 .carrito .carrito-item .carrito-item-cantidad {
-    border: none; /* Sin borde */
-    font-size: 18px; /* Tamaño de fuente */
-    background: transparent; /* Fondo transparente */
-    display: inline-block; /* Elemento de bloque en línea */
-    width: 30px; /* Ancho del campo de cantidad */
-    padding: 5px; /* Relleno interior */
-    text-align: center; /* Alineación centrada */
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
 }
 
 .carrito .carrito-item .selector-cantidad i {
-    font-size: 18px; /* Tamaño de fuente */
-    width: 32px; /* Ancho del ícono */
-    height: 32px; /* Altura del ícono */
-    line-height: 32px; /* Altura de línea */
-    text-align: center; /* Alineación centrada */
-    border-radius: 50%; /* Borde redondeado */
-    border: 1px solid #ff538c; /* Borde con color */
-    cursor: pointer; /* Cursor apuntador */
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #eb0da1;
+    cursor: pointer;
 }
 
 .carrito .carrito-item .carrito-item-precio {
-    font-weight: bold; /* Fuente en negrita */
-    display: inline-block; /* Elemento de bloque en línea */
-    font-size: 18px; /* Tamaño de fuente */
-    margin-bottom: 5px; /* Márgen inferior */
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
+
 
 .carrito .carrito-item .btn-eliminar {
     position: absolute; /* Posición absoluta */
     right: 15px; /* Posicionamiento desde la derecha */
     top: 15px; /* Posicionamiento desde la parte superior */
-    color: #ff538c; /* Color de texto */
+    color: #eb0da1; /* Color de texto */
     width: 40px; /* Ancho del botón */
     height: 40px; /* Altura del botón */
     line-height: 40px; /* Altura de línea */
     text-align: center; /* Alineación centrada */
     border-radius: 50%; /* Borde redondeado */
-    border: 1px solid #ff538c; /* Borde con color */
+    border: 1px solid #ff14b1; /* Borde con color */
     cursor: pointer; /* Cursor apuntador */
     display: block; /* Elemento de bloque */
     background: transparent; /* Fondo transparente */
@@ -698,7 +704,7 @@ svg {
 }
 
 .carrito-total {
-    background-color: #f3f3f3; /* Color de fondo */
+    background-color: #0f0f0f; /* Color de fondo */
     padding: 30px; /* Relleno interior */
 }
 
@@ -715,8 +721,8 @@ svg {
     display: block; /* Elemento de bloque */
     width: 100%; /* Ancho completo */
     border: none; /* Sin borde */
-    background: #ff538c;
-    color: #fff; /* Color del texto */
+    background:#f5f4f4;
+    color: #070707; /* Color del texto */
     padding: 15px; /* Relleno interior */
     border-radius: 10px; /* Borde redondeado */
     text-transform: uppercase; /* Transformación a mayúsculas */
@@ -726,17 +732,19 @@ svg {
 }
 
 .carrito-total .btn-pagar:hover {
-    background: #e94e77; /* Color de fondo al pasar el ratón */
+    background: #ff01d5; /* Color de fondo al pasar el ratón */
 }
 
 
 
 /* Estilos para el footer */
+/* Estilos para el pie de página */
 .footer {
-    background-color: #333; /* Color de fondo oscuro */
-    color: #fff; /* Color de texto blanco */
-    padding: 1rem 0; /* Padding superior e inferior reducido */
-    margin-top: 300rem; /* Separación superior del footer */
+    background-color: #ec40e452;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
 
 
@@ -824,7 +832,7 @@ svg {
     outline: none;
     background: none;
     border: none;
-    border-bottom: 2px solid #d2b495;
+    border-bottom: 2px solid #ff00cc;
     cursor: pointer;
     padding: 0.5rem 0 1rem;
     color: #fff;
@@ -852,7 +860,7 @@ svg {
 }
 
 .content button:hover {
-    background-color: #f16ddbbe; /* Cambia el color al hacer hover */
+    background-color: #ff00cc; /* Cambia el color al hacer hover */
     color: #fff;
 }
 
@@ -860,7 +868,7 @@ svg {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem; /* Padding superior reducido */
-    border-top: 1px solid #d2b495;
+    border-top: 1px solid #00dbde;
 }
 
 .copyright p {
@@ -878,13 +886,15 @@ svg {
 .main-content {
     width: 100%;
     max-width: 1200px;
-    margin: 50px auto; /* Márgen superior e inferior */
+    margin: 50px auto; /* Márgen superior e inferior, centrado horizontalmente */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
+
 
 /* Estilos para los encabezados principales */
 h1, h2, h3, h4, h5, h6 {
@@ -957,7 +967,7 @@ input, textarea, select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #00dbde;
     border-radius: 5px;
     font-size: 1rem;
     box-sizing: border-box;
@@ -972,43 +982,15 @@ input, textarea, select {
 }
 
 .flex-item {
-    background-color: #333;
-    color: #fff;
+    background-color: #00dbde;
+    color: #ff00cc;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
     flex: 1 1 calc(33.333% - 40px); /* Tres columnas con márgenes */
 }
 
-/* Responsivo para dispositivos móviles */
-@media (max-width: 768px) {
-    .flex-item {
-        flex: 1 1 calc(100% - 20px); /* Una columna con márgenes */
-    }
-}
 
-/* Responsivo para tabletas */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .flex-item {
-        flex: 1 1 calc(50% - 30px); /* Dos columnas con márgenes */
-    }
-}
-
-/* Responsivo para pantallas grandes */
-@media (min-width: 1025px) {
-    .flex-item {
-        flex: 1 1 calc(33.333% - 40px); /* Tres columnas con márgenes */
-    }
-}
-
-/* Estilos para el pie de página */
-.footer {
-    background-color: #222;
-    color: #ccc;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
 
 .footer a {
     color: #00dbde;
