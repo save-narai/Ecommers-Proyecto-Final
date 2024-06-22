@@ -222,7 +222,7 @@ svg {
 .textoMapa h2 {
     padding: 0;
     color: var(--azul-color); /* Color azul para el título */
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00f, 0 0 20px #00f, 0 0 25px #00f, 0 0 30px #00f, 0 0 35px #00f; /* Efecto de neón en azul */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px aqua, 0 0 20px #00f, 0 0 25px aqua, 0 0 30px aqua, 0 0 35px #00f; /* Efecto de neón en azul */
     font-size: 2rem; /* Tamaño de la fuente ajustado a 2 rem (equivalente a 32px si el tamaño de fuente base es 16px) */
 }
 
@@ -238,13 +238,13 @@ svg {
     font-size: 1.5rem; /* Reducir el tamaño del texto */
     color: #fff; /* Color blanco */
     text-align: center; /* Alinear al centro */
-    text-shadow: 0 0 5px #fff, 
-                 0 0 10px #fff, 
-                 0 0 15px #00f, 
-                 0 0 20px #00f, 
-                 0 0 25px #00f, 
-                 0 0 30px #00f, 
-                 0 0 35px #00f; /* Efecto de neón */
+    text-shadow: 0 0 5px magenta, 
+                 0 0 10px aqua, 
+                 0 0 15px magenta, 
+                 0 0 20px magenta, 
+                 0 0 25px aqua, 
+                 0 0 30px aqua, 
+                 0 0 35px magenta; /* Efecto de neón */
 }
 
 
@@ -283,6 +283,7 @@ button {
     max-width: 920px; /* Ancho máximo del contenedor */
     margin: 1rem auto; /* Margen superior e inferior reducido, centrado horizontalmente */
     padding: 0 1rem; /* Padding horizontal */
+    border-color: #00dbde;
     margin-top: 180px; /* Ajuste adicional para el margen superior */
 }
 
@@ -317,6 +318,7 @@ button {
 form {
     padding: 1.5rem; /* Padding del formulario */
     border-radius: 0.25rem; /* Borde redondeado */
+    border-color: #00dbde;
 }
 
 /* Estilos para grupos de formulario */
@@ -327,7 +329,7 @@ form {
 /* Estilos para controles de formulario */
 .form-control {
     width: 100%; /* Ancho completo */
-    height: 2rem; /* Altura del control */
+    height: 3rem; /* Altura del control */
     padding: 0.375rem 0.75rem; /* Padding interno */
     color: #495057; /* Color de texto */
     background-color: #fff; /* Color de fondo */
@@ -339,7 +341,7 @@ form {
 
 /* Estilos para control de formulario enfocado */
 .form-control:focus {
-    border-color: #80bdff; /* Color de borde al estar enfocado */
+    border-color: aqua ; /* Color de borde al estar enfocado */
     outline: 0; /* Eliminar contorno por defecto */
     box-shadow: 0 0 0 0.2rem rgba(0, 11, 23, 0.25); /* Sombra ligera */
 }
