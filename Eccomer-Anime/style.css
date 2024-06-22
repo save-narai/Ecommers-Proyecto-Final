@@ -37,8 +37,9 @@ svg {
 }
 
 .logo img {
-    width:180px; /* Ajusta el ancho del logo */
+    width: 300px; /* Ajusta el ancho del logo */
     height: auto; /* Mantiene la proporción original del logo */
+    margin-top: -10px;
 }
 
 

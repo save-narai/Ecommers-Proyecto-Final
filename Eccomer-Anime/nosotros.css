@@ -28,24 +28,25 @@ svg {
     position: relative; /* Posición relativa para zIndex */
     z-index: 100; /* Capa z-index para superposición */
     gap: 20px; /* Espacio entre los elementos */
-    flex-wrap: wrap; /* Permite envolver los elementos en filas adicionales */
 }
 
 /* Estilos para el logo */
 .logo {
-    margin-left: 20px; /* Espacio izquierdo */
+    margin-left: auto; /* Empuja el logo hacia la derecha */
+    
 }
 
 .logo img {
-    width: 180px; /* Ajusta el ancho del logo */
+    width:180px; /* Ajusta el ancho del logo */
     height: auto; /* Mantiene la proporción original del logo */
 }
+
 
 /* Estilos para el área de menú */
 .menu-area {
     display: flex; /* Utiliza flexbox para disposición */
-    gap: 15px; /* Espacio entre los elementos del menú */
-    margin-left: auto; /* Margen izquierdo automático */
+    gap: 30px; /* Espacio entre los elementos del menú */
+    margin-left: auto; /* Márgen izquierdo automático */
 }
 
 .menu-area li {
@@ -56,7 +57,7 @@ svg {
 .menu-area li a {
     color: #fff; /* Color de texto blanco */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    font-size: 16px; /* Tamaño de fuente */
+    font-size: 18px; /* Tamaño de fuente */
     font-weight: 500; /* Grosor de la fuente */
     position: relative; /* Posición relativa para seudoelementos */
     transition: color 0.3s; /* Transición de color al pasar el cursor */
@@ -105,22 +106,6 @@ svg {
 .menu-icons img:hover {
     transform: scale(1.2); /* Aumenta tamaño al pasar el cursor */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
